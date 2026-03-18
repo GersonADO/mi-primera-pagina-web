@@ -1,2 +1,100 @@
-<h1>Hola mundo</h1>
-<p>Esta es mi primera página web</p>
+<!DOCTYPE html>  <!-- indica que el documento es HTML -->
+<html lang="es"> <!-- es el contenedor del documento y define el idioma -->
+
+<head>  <!-- Encabezado -->
+
+    <meta charset="UTF-8">  <!-- permitir acentos, ñ, emojis -->
+    <title>Portafolio - Gerson Aminadab</title>  <!-- nombre que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Agrega estilos del CSS -->
+</head>
+
+<body>  <!-- El cuerpo de la Pagina -->
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1> Portafolio - Página de Capacitación </h1>
+        <h2> Gerson Aminadab Del Toro Alpirez </h2>
+    </header>
+
+
+    <!-- SOBRE MI --> 
+    <section> <!-- Una seccion -->
+        <h2>Sobre mí</h2> <!-- Subtitulo-->
+         <!-- Texto normal -->
+        <p> Elegante, seductor, guapo, carismatico, exitoso, talentoso  adinerado ... asies Brad Pitt. </p>
+        <p> Yo soy Gerson un tipazo, me gustan los videojuegos, la electronica y el baloncesto. </p>
+        <p> Estoy cursando la carera de ING.Electronica y computacion en 7mo semestre.</p>
+
+
+        <h3>Habilidades aprendidas durante la carrera: </h3> <!-- Subtitulo-->
+        <h4>Lenguajes</h4> <!-- Subtitulo-->
+        <ul>  <!-- Lista  desordenada-->
+            <li>HTML básico</li>
+            <li>Git y GitHub</li>
+            <li>Lógica de programación</li> <!-- Agregar elementos-->
+            <li>C y C++</li>
+            <li>Python</li>
+            <li>MySQL</li>
+        </ul>
+    </section> <!-- Fin de una seccion -->
+
+
+    <!-- PROYECTOS -->
+    <section> <!-- Una seccion -->
+    <h2>Proyectos</h2>
+
+    <div class="contenedor-proyectos">
+
+        <div class="tarjeta">
+            <h3>Proyecto 1</h3>
+            <p>ADO-MINACION MUNDIAL.</p>
+            <img src= img/ADO.jpg>    <!-- Muestra imagen -->
+            <br>
+            <a href="#">Ver proyecto</a>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Proyecto 2</h3>
+            <p>ZAZA.</p>
+            <img src= img/Mariana.jpg>
+            <br>
+            <a href="#">Ver proyecto</a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- CONTACTO -->
+    <section>  <!-- Una seccion -->
+        <h2>Contactame</h2>
+
+        <form> <!-- Formulario -->
+            <label>Nombre:</label>
+            <input type="text" placeholder="Tu nombre" required>
+
+            <br><br>
+
+            <label>Correo:</label>
+            <input type="email" placeholder="tucorreo@email.com" required>
+
+            <br><br>
+
+            <label>Mensaje:</label>
+            <br>
+            <textarea rows="4" placeholder="Escribe aquí..." cols="30"></textarea>
+            <br><br>
+
+            <label for="pais">País:</label>
+	        <select id="pais" name="pais">
+		        <option value="mx">México</option>
+		        <option value="co">Colombia</option>
+		        <option value="ar">Argentina</option>
+	        </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
+

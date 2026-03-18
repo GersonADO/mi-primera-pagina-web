@@ -1,0 +1,55 @@
+/* quitar margen automático del navegador */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-color:#f4f4f4;
+}
+
+/* encabezado */
+header{
+    background-color:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* secciones */
+section{
+    padding:20px;
+}
+
+/* contenedor de proyectos */
+.contenedor-proyectos{
+    display:flex;
+    gap:20px;
+}
+
+/* tarjetas */
+.tarjeta{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    width:200px;
+}
+
+/* imagen */
+.tarjeta img{
+    width:100%;
+    border-radius:5px;
+}
+
+/* boton */
+button{
+    background-color:#007BFF;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#0056b3;
+}
